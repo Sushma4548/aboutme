@@ -2,7 +2,7 @@
  
 ## Repository Links
 
-- [webpage](https://karanamvijaykumar.github.io/aboutme/ "Working with aboutme webpage")
+- [webpage](https://github.com/Sushma4548/aboutme/ "Working with aboutme webpage")
 
 - [Source](https://github.com/KaranamVijayKumar/aboutme/ "Working with aboutme source")
 
