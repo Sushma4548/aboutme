@@ -25,6 +25,7 @@ This webpage is to play around with GitHub commands and to learn how to publish 
 
 This is Sushma Rani Reddy Aleti!!! currently pursuing my Master's Degree in Applied Computer Science and I have joined the NorthWest family recently for the Spring 2019 semester.
 
+
 ![MyPic](IMG_20180307_142500.JPG)
 
 
