@@ -3,6 +3,9 @@ function myfunction(){
 
     let base = Number($("#base").val());
     let height = Number($("#height").val());
+    localStorage.setItem("base",base);
+    localStorage.setItem("height",height);
+    
     if(base < 0 || height < 0){
      $("#result").html("Please enter positive values");
     }else{
@@ -13,8 +16,16 @@ function myfunction(){
  
  }
  
- const url = "https://thesimpsonsquoteapi.glitch.me/quotes"
+ const url = "https://thesimpsonsquoteapi.glitch.me/quotes";
  document.getElementById('submit').addEventListener('click', function() {
+     $.ajax({url: url, success: function(result){
+         var test = result;
+         var image = result[0].image;
+         document.getElementById("image").src = image
+     }});
+ });
+
+/* document.getElementById('submit').addEventListener('click', function() {
      fetch(url)
      .then((res) => { return res.json() })
      .then((data) => {           
@@ -28,5 +39,5 @@ function myfunction(){
      .catch(function (error) {
          console.log(JSON.stringify(error)); //logs in console whenever HTTP response error occurs (failed HTTP response handling)
      })
- })
+ })*/
  
