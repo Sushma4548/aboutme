@@ -10,7 +10,7 @@ function myfunction(){
      $("#result").html("Please enter positive values");
     }else{
     let area = 0.5*parseInt(base)*parseInt(height);
-    alert(document.getElementById("result").innerHTML = area);
+    document.getElementById("result").innerHTML = area;
   
  }
  
