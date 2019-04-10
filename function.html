@@ -1,69 +1,80 @@
+<!DOCTYPE html>
 <html>
-<head>
-        
-        <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    </head>
+  <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous">
+  
+      <link href="style.css" rel="stylesheet"/>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+  
+<title>Area of triangle</title>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Sushma Reddy</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">contact</a>
-                    </li>
-                   
-                    <li class="nav-item">
-                      <a class="nav-link " href="function.html">function</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
-<h4>Find the area and circumference of a circle</h4>
-<header>
-       
-        
-</header>
-<main>
-        <main class="container-fluid" style="background:url('reddy.jpeg');background-repeat: no-repeat;background-size: cover;" >
-
-    
-</main>
-<section>
-<form name=form1>
-        Enter the radius of circle:
-       <input type="text" name="txtRadius" size=10>
-       <br>
-       <input type="button" value="Calculate" onClick='CalculateArea();'>  
-    </form>
-
-<script language="JavaScript">
-        function CalculateArea(){
-            var radius =document.form1.txtRadius.value;
-            alert("The area of the circle is: "+ (radius * radius * Math.PI)+"\n The circumference of the circle is: "+ (2 * radius * Math.PI)  );
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Sushma Reddy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="function.html">function</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="qunit1.html">Qunit testing</a>
+            </li>
+          </ul>
+          
+      
      
-        }
-        </script>
-        </section>
-    
-       
-    <br>
-    <hr>
+      </div>
+    </nav>
 
-<footer>
-        &copy; 2019 Sushma Reddy Aleti.
+<main>
 
-</footer>
+  <h2>Area of triangle</h2>
+ <section class="important">   
+  <p>
+    Enter base of triangle:
+    <input id="base" type="number" placeholder="base" default= "3">
+  </p>
+<p>
+  <label>Enter height of triangle:</label>
+    <input id="height" type="number" placeholder="height">
+ </p>
+
+<button id="clicker" type="button" class="btn btn-primary" onclick="myfunction()">
+   click here to get area!
+ </button>
+
+
+
+</main>
+<div class="main_class">
+    <div class="res_text">Result:</div>
+      <p id="result"> </p>
+  
+  </div>
+</section>
+
+<h3 id="submit">get mouse on me</h3>
+<img src="" id="image" style="width:100px;height:100px;"/>
+<script src="./function.js"></script>
+
+<br>
+<hr>
+<footer class="container-fluid">
+    &copy; 2019 Sushma Rani Reddy
+  </footer>
+  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
